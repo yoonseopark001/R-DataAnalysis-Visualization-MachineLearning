@@ -16,7 +16,7 @@
 2. Operators
      * `+` `-` `*` `/`
      * `%/%` Floor division // c.f. `//` in Python
-     * `%%`  Modulus // Useful to check if values are T or F in Data Analysis
+     * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis
      * `**` `^`
 3. Math Functions
      * `sqrt()` `abs()`
@@ -28,29 +28,46 @@
 5. Data Types
 6. Operators with Variables
 7. Boolean
-8. Testing Data Type
+     * `==` `!=` `>` `<` `>=` `<=`
+     * `&` `|`
+     * `xor(x,y)` True only if one of x,y is False
+8. Testing Data Type: True (1) or False (0)
+     * `is.numeric()` 
+     * `is.integer()` 
+     * `is.logical()`
+     * `is.double()` float
+     * `is.character()`
+     * `is.data.frame()`
+     * `is.factor()`
+     * `is.Date()`
+     * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
+     * `is.nan()`
 9. Converting Data Type
-     * `as.numeric()`
-     * `as.integer()`
+     * `as.numeric()` 
+     * `as.integer()` 
      * `as.logical()`
-     * `as.double()`
+     * `as.double()` float
      * `as.character()`
      * `as.data.frame()`
-     * `as.factor()`
+     * `as.factor()` // **useful** in data analysis
+          * From `gender <- c('man', 'woman')` => character
+          * To `f_gender <- as.factor(gender)` => Factor w/ 2 levels "man","woman": 1 2 
      * `as.Date()`
-10. Basic Functions
+          * 'as.Date('19/10/30', %y/%m/%d)
+          * 'as.Date('2019/10/30', %Y/%m/%d) 
+          * 'as.Date('19-10-30', %y-%m-%d)
+          * 'as.Date('19/10/30', %y/%m/%d) - 1' => 19/10/29
+12. Basic Functions
      * `ls()` `rm()` Managing memory 
      * `Print()`, `Print( , quote=F)`
           * `sprintf("%s is %i years old, "John", 35)`
           * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
           * `sprintf(The height of "%s is %5.1f, "boy", 103.5)`
-11. Exploring Data
-     * `head()`
-     * `tail()`
+13. Exploring Data
+     * `head()` `tail()`
      * `unique()`
      * `class()`
-     * `summary()`
+     * `summary()`: check the distance between median and mean for each column
      * `str()`
      * `plot()`
-     * `table()`
-     * `hist()`
+     * `table()` `hist()`
