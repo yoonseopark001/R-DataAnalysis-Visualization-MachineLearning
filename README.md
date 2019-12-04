@@ -29,41 +29,13 @@
           - e.g. `sum(data[,3])` // sum of 3rd column
      * `mean()` `max()` `min()` `median()` // e.g. 
      * `na.rm = T` // e.g. 
-5. Vector  
-     * assign & load
-         - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
-         - `a[1] <- 30` => 'a': 30 20 30
-         - `x <- rnorm(100)`
-         - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
-     * `length()`
-     * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
-     * operators
-     * `mean()` `var()` `sd()`
-     * vector merging
-          - `append(3, 4)` => `3 4` `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
-     * squence
-          - `seq(from = , to = , by = )` `seq( , , )`
-     * replicable `rep(  , times= )` `rep( , )`
-          - `rep(1,5)` => `1 1 1 1 1`
-          - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
-          - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
-     * `unique()`
-     * boolean `x == y` => `TRUE FALSE TRUE` where `x <- c(1, 2, 3)` `y <- c(1, 8, 5)`
-7. Data Frame
-     * Creating data.frame
-          - `num = c(1:5)`
-          - `name = c("Snack", "Bread", "Juice", "Milk", "Candy")`
-          - `price = c(5, 3, 3, 2, 1)`
-          - `qty = c(100, 50, 80, 90, 150)`
-          - `supermarket <- data.frame(Number = num, Name = name, Price = price, Quantity = qty)`
-6. Boolean
+5. Boolean
      * `==` `!=` `>` `<` `>=` `<=`
      * `&` `|`
      * `xor(x,y)` True only if one of x,y is False
      * `any(x >= 1)` `all(x < 1)` // data size test
      * `is.vector(x)` // data type Test
-7. Data Types
-- Testing Data Type: True (1) or False (0)
+6. Testing Data Type: True (1) or False (0)
      * `is.numeric()` 
      * `is.integer()` 
      * `is.logical()`
@@ -75,7 +47,7 @@
      * `is.Date()`
      * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
      * `is.nan()`
-- Converting Data Type
+7. Converting Data Type
      * `as.numeric()` 
      * `as.integer()` 
      * `as.logical()`
@@ -89,8 +61,8 @@
           * `as.Date('19/10/30', %y/%m/%d)`
           * `as.Date('2019/10/30', %Y/%m/%d)` 
           * `as.Date('19-10-30', %y-%m-%d)`
-          * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29
-8. Print(), paste(), cat(paste())
+          * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29     
+8. Print
      * `Print()` `Print( , quote=F)`
           * `sprintf("%s is %i years old, "John", 35)`
           * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
@@ -101,7 +73,42 @@
      * `paste("Answer is: ", 10)` => `'Answer is 10'`
      * `paste("2019", "11", "01")` => `'2019 11 01'`
      * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
-     * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)
+     * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)    
+9. Vector
+    * assign & load
+     - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
+     - `a[1] <- 30` => 'a': 30 20 30
+     - `x <- rnorm(100)`
+     - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
+    * `length()`
+    * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
+    * operators
+    * `mean()` `var()` `sd()`
+    * vector merging
+      - `append(3, 4)` => `3 4` `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
+    * squence
+      - `seq(from = , to = , by = )` `seq( , , )`
+    * replicable `rep(  , times= )` `rep( , )`
+      - `rep(1,5)` => `1 1 1 1 1`
+      - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
+      - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
+    * `unique()`
+    * boolean `x == y` => `TRUE FALSE TRUE` where `x <- c(1, 2, 3)` `y <- c(1, 8, 5)`
+10. Data Frame  
+    * Creating data.frame
+      - `num = c(1:5)`
+      - `name = c("Snack", "Bread", "Juice", "Milk", "Candy")`
+      - `price = c(5, 3, 3, 2, 1)`
+      - `qty = c(100, 50, 80, 90, 150)`
+      - `supermarket <- data.frame(Number = num, Name = name, Price = price, Quantity = qty)`
+    * Handling
+      - `supermarket[1,]` // 1st row
+      - `supermarket[,1:3]` // 1st, 2nd, 3rd columns `supermarket[1:3]`
+      - `supermarket[3]` // 3rd column  cf. 
+      - `supermarket[1:3,c(2,4)]` // returns 'rows from 1 to 3' and '2nd & 4th columns'
+      cf. `supermarket[,3]` or 'supermarket$price' returns `vector``5 3 3 2 1` as a `numeric` `class`
+          - add `colnames` if needed after 'cbind'
+     * converting to data frame 'as.data.frame()'
 
 ## 2. Data Handling in R
 1. Exploring Data
