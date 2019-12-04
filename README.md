@@ -104,12 +104,19 @@
     * Handling
       - `supermarket[1,]` // 1st row
       - `supermarket[,1:3]` // 1st, 2nd, 3rd columns `supermarket[1:3]`
-      - `supermarket[3]` // 3rd column  cf. 
       - `supermarket[1:3,c(2,4)]` // returns 'rows from 1 to 3' and '2nd & 4th columns'
+      - `supermarket[3]` // 3rd column 
+      - 'supermarket$price' // useful to simply access column data                  
       cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `numeric` `class`
           - add `colnames` if needed after `cbind`
      * converting to data frame `as.data.frame()`
-
+     * merging dataframes based on 'key' `cbind` and `merge()`
+      - If two (or more) data frames are in order, 'cbind(colA, colB)' is one way to do it.
+          - e.g. `cbind(height[1:2], weight[1])` where height and weight are in order
+      - If those are not in order, `merge(x = df1, y = df2, by.x = "key of x", by.y = "key of y")`
+          - e.g. `merge(height, weight, by.x = "ID(height's key)", by.y = "ID_Num(weight's key)")
+      - Of course, you can still use `cbind`, if you order keys(index) using `orderBy` beforehand.
+                        
 ## 2. Data Handling in R
 1. Exploring Data
      * `head()` `tail()`
@@ -120,10 +127,29 @@
      * `plot()`
      * `table()` `hist()`
 2. Extracting or replacing substrings in a character vector // useful in data cleansing
+     A. R function
      * `substring("    ", from, to)`
      * `substring("abcdefg", 3, 5)` => `cde`
      * `substring(strSamp, 4, 8)` => `'bbbbb' 'ccccc'` where `strSamp <- c("aaabbbbb", "aaaccccc")`
      * `substring(strDate, 1, 4)` => `'2018' '2019'`  where `strDate <- c("2018-11-01", "2019-11-01")`
+     B. `stringr` package
+        (1) extract finding values, which is a type of list(key + value) in characters
+        (2) unlist (1) to convert it into vector
+        (3) convert (2) into numeric
+     * `install.packages("stringr")` `library(stringr)`
+     *  `str_extract()` `str_extract_all()` `str_length()` `str_c()` `str_c()` `str_sub()` `str_spilit()` `str_replace()` `str_located()` `str_locate()` `str_locate_all()
+        (1) extract finding values, which is a type of list(key + value) in characters
+     * `strR <- "HEbLLc12fO34hijiWORip099LD8ys766pa"`
+     * str_extract(data, "[from-to]{digits)") // [from-to]: e.g. [0-9] [A-Z] [A-z] [가-힣] // {digit}: e.g. {1} {2,} 2 or above 
+          - `str_extract(strR, "[0-9]")` => `'1'` // the first number from 0 to 9 of `strr` is `'1'`
+          - `str_extract(strR, "[2-9]{2}")` => `'34'` // the first 2-digit number from 2 to 9 of`strr` is `'34'`
+     * str_extract_all(data, "[from-to]{digits)")
+          - `str_extract_all(strR, "[2-9]{2,}")` => `1. '34' '99' '766'`
+          - `str_extract_all(strR,"[A-Z]{1,}") => `'HE' 'LL' 'O' 'WOR' 'LD'`
+     * the `class` of the return is `list` with e.g. key: 1 and value: '34' '98' '76'
+        (2) unlist (1) to convert it into vector: `unlist(str_extract_all(strR, "[2-9]{2}"))` => `'34' '99' '76'` 
+        (3) convert (2) into numeric: `number as.numeric(unlist(str_extract_all(strR, "[2-9]{2}")))` => `34 99 76`
+
 3. Combining by rows or columns
      * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
      * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
