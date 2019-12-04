@@ -8,7 +8,7 @@
 ## 1. Introduction to R for data analysis
 x. Vector
 * assign & load
-- `a <- c(10, 20, 30)` `a[1] => 10` `a[-1] => 20 30`// starting from 1 in R
+- `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
 - `a[1] <- 30` => `a
 - `x <- rnorm(100)`
 - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
@@ -16,7 +16,7 @@ x. Vector
 * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
 * `mean()` `var()` `sd()`
 * vector merging
- - `append(3, 4)` => 3 4 `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
+ - `append(3, 4)` => `3 4` `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
 * operators
 * squence
  - `seq(from = , to = , by = )` `seq( , , )`
