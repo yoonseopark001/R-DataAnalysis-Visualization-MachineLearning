@@ -51,7 +51,7 @@ x. Vector
      * `&` `|`
      * `xor(x,y)` True only if one of x,y is False
 7. Data Types
-Testing Data Type: True (1) or False (0)
+> Testing Data Type: True (1) or False (0)
      * `is.numeric()` 
      * `is.integer()` 
      * `is.logical()`
@@ -62,7 +62,7 @@ Testing Data Type: True (1) or False (0)
      * `is.Date()`
      * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
      * `is.nan()`
-Converting Data Type
+> Converting Data Type
      * `as.numeric()` 
      * `as.integer()` 
      * `as.logical()`
@@ -82,10 +82,13 @@ Converting Data Type
           * `sprintf("%s is %i years old, "John", 35)`
           * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
           * `sprintf(The height of "%s is %5.1f, "boy", 103.5)`
-     * print(paste("Hello", "World)" //  cf. `print("Hello", "World")` => `doesn't work' 
+     * `print(paste("Hello", "World)"` //  cf. `print("Hello", "World")` => doesn't work
      * `cat(paste("Hello", "\n", "World")` `cat(paste("Hello\n", "World")`
      * `cat(paste("Hello", "\t", "World")` `cat(paste("Hello\t", "World")`
-     * paste("Answer is: ", 10) => `'Answer is 10'`
+     * `paste("Answer is: ", 10)` => `'Answer is 10'`
+     * `paste("2019", "11", "01")` => `'2019 11 01'`
+     * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
+     * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3) 
 9. Exploring Data
      * `head()` `tail()`
      * `unique()`
