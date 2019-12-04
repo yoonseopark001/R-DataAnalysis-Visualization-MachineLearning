@@ -56,7 +56,7 @@
           * `as.Date('19/10/30', %y/%m/%d)`
           * `as.Date('2019/10/30', %Y/%m/%d)` 
           * `as.Date('19-10-30', %y-%m-%d)`
-          * `as.Date('19/10/30', %y/%m/%d)` - 1' => 19/10/29
+          * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29
 12. Basic Functions
      * `ls()` `rm()` Managing memory 
      * `Print()`, `Print( , quote=F)`
