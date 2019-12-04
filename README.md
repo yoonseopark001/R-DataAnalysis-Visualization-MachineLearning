@@ -51,7 +51,7 @@ x. Vector
      * `&` `|`
      * `xor(x,y)` True only if one of x,y is False
 7. Data Types
-> Testing Data Type: True (1) or False (0)
+ Testing Data Type: True (1) or False (0)
      * `is.numeric()` 
      * `is.integer()` 
      * `is.logical()`
@@ -62,7 +62,7 @@ x. Vector
      * `is.Date()`
      * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
      * `is.nan()`
-> Converting Data Type
+ Converting Data Type
      * `as.numeric()` 
      * `as.integer()` 
      * `as.logical()`
