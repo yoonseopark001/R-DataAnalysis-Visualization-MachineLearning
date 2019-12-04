@@ -16,14 +16,14 @@ x. Vector
 * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
 * `mean()` `var()` `sd()`
 * vector merging
- - `append(3, 4)` => 3 4 `c(x, y)` => '3 4` // cf. `paste(x, y)` `'x, y'`
+ - `append(3, 4)` => 3 4 `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
 * operators
 * squence
  - `seq(from = , to = , by = )` `seq( , , )`
 * replicable `rep(  , times= )` `rep( , )`
  - `rep(1,5)` => `1 1 1 1 1`
  - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
- - `rep(c('blue', 'green'), 3)` => 'blue' 'green' 'blue' 'green' 'blue' 'green'
+ - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
 * `unique()`
 * boolean
 
@@ -86,7 +86,6 @@ Converting Data Type
      * `cat(paste("Hello", "\n", "World")` `cat(paste("Hello\n", "World")`
      * `cat(paste("Hello", "\t", "World")` `cat(paste("Hello\t", "World")`
      * paste("Answer is: ", 10) => `'Answer is 10'`
-
 9. Exploring Data
      * `head()` `tail()`
      * `unique()`
