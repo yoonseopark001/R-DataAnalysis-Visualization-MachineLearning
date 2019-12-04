@@ -106,9 +106,9 @@
       - `supermarket[,1:3]` // 1st, 2nd, 3rd columns `supermarket[1:3]`
       - `supermarket[3]` // 3rd column  cf. 
       - `supermarket[1:3,c(2,4)]` // returns 'rows from 1 to 3' and '2nd & 4th columns'
-      cf. `supermarket[,3]` or 'supermarket$price' returns `vector``5 3 3 2 1` as a `numeric` `class`
-          - add `colnames` if needed after 'cbind'
-     * converting to data frame 'as.data.frame()'
+      cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `numeric` `class`
+          - add `colnames` if needed after `cbind`
+     * converting to data frame `as.data.frame()`
 
 ## 2. Data Handling in R
 1. Exploring Data
@@ -128,11 +128,12 @@
      * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
      * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
 4. Naming rows and columns
-     * rownames(mat1) <- c("Jan", "Feb", "Mar")
-     * colnames(mat2) <- c("Height", "Weight", "Age")     
+     * `rownames(mat1) <- c("Jan", "Feb", "Mar")`
+     * `colnames(mat2) <- c("Height", "Weight", "Age")`     
 
 
 ###. Random Generator
+
      * `runif()` `runif(num, min = , max = )` // default `min = 0` `max = 1`
      * random integer generation: `trunc(runif(5,1,20)`
      * `rnorm ()` `rnorm(num, mean = , sd = )` // default `mean = 0` `sd = 1`                                     
