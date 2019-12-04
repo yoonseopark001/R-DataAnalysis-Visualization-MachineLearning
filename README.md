@@ -5,29 +5,9 @@
 [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 
-## 1. Introduction to R for data analysis
-x. Vector
-* assign & load
-- `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
-- `a[1] <- 30` => `a
-- `x <- rnorm(100)`
-- `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
-* `length()`
-* `range()` // cf. `range()[1] == min()` `range()[2] == max()`
-* `mean()` `var()` `sd()`
-* vector merging
- - `append(3, 4)` => `3 4` `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
-* operators
-* squence
- - `seq(from = , to = , by = )` `seq( , , )`
-* replicable `rep(  , times= )` `rep( , )`
- - `rep(1,5)` => `1 1 1 1 1`
- - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
- - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
-* `unique()`
-* boolean
 
-## 0. Introduction to R for data analysis
+
+## 1. Introduction to R for data analysis
 1. Introduction
      * `help()`
      * `example()`
@@ -42,14 +22,46 @@ x. Vector
 4. Math Functions
      * `sqrt()` `abs()`
      * `trunc()` `round()`
-     * `sum()` `mean()` `max()` `min()` `median()` // e.g. sum(iris$Sepal.Length)
-5. Variables
-    * scalar
-    * vector 
+     * `sum()`
+          - e.g. `sum(iris$Sepal.Length)` // sum of column Sepal.Length in iris dataset
+          - e.g. `sum(10, 20, 20, NA, na.rm = T)` // remove(ignore) NA value
+          - e.g. `sum(data[1,])` // sum of 1st row
+          - e.g. `sum(data[,3])` // sum of 3rd column
+     * `mean()` `max()` `min()` `median()` // e.g. 
+     * `na.rm = T` // e.g. 
+5. Vector  
+     * assign & load
+         - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
+         - `a[1] <- 30` => 'a': 30 20 30
+         - `x <- rnorm(100)`
+         - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
+     * `length()`
+     * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
+     * operators
+     * `mean()` `var()` `sd()`
+     * vector merging
+          - `append(3, 4)` => `3 4` `c(x, y)` => `3 4` // cf. `paste(x, y)` `'x, y'`
+     * squence
+          - `seq(from = , to = , by = )` `seq( , , )`
+     * replicable `rep(  , times= )` `rep( , )`
+          - `rep(1,5)` => `1 1 1 1 1`
+          - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
+          - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
+     * `unique()`
+     * boolean `x == y` => `TRUE FALSE TRUE` where `x <- c(1, 2, 3)` `y <- c(1, 8, 5)`
+7. Data Frame
+     * Creating data.frame
+          - `num = c(1:5)`
+          - `name = c("Snack", "Bread", "Juice", "Milk", "Candy")`
+          - `price = c(5, 3, 3, 2, 1)`
+          - `qty = c(100, 50, 80, 90, 150)`
+          - `supermarket <- data.frame(Number = num, Name = name, Price = price, Quantity = qty)`
 6. Boolean
      * `==` `!=` `>` `<` `>=` `<=`
      * `&` `|`
      * `xor(x,y)` True only if one of x,y is False
+     * `any(x >= 1)` `all(x < 1)` // data size test
+     * `is.vector(x)` // data type Test
 7. Data Types
 - Testing Data Type: True (1) or False (0)
      * `is.numeric()` 
@@ -57,6 +69,7 @@ x. Vector
      * `is.logical()`
      * `is.double()` float
      * `is.character()`
+          - `example <- c(1, 2, '3')` => `'1' '2' '3'` // entire elements of `example` turns to character
      * `is.data.frame()`
      * `is.factor()`
      * `is.Date()`
@@ -69,7 +82,7 @@ x. Vector
      * `as.double()` float
      * `as.character()`
      * `as.data.frame()`
-     * `as.factor()` // **useful** in data analysis
+     * `as.factor()` // useful in data analysis
           * From `gender <- c('man', 'woman')` => character
           * To `factorGender <- as.factor(gender)` => 'Factor w/ 2 levels "man","woman": 1 2' 
      * `as.Date()`
@@ -88,8 +101,10 @@ x. Vector
      * `paste("Answer is: ", 10)` => `'Answer is 10'`
      * `paste("2019", "11", "01")` => `'2019 11 01'`
      * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
-     * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3) 
-9. Exploring Data
+     * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)
+
+## 2. Data Handling in R
+1. Exploring Data
      * `head()` `tail()`
      * `unique()`
      * `class()`
@@ -97,3 +112,22 @@ x. Vector
      * `str()`
      * `plot()`
      * `table()` `hist()`
+2. Extracting or replacing substrings in a character vector // useful in data cleansing
+     * `substring("    ", from, to)`
+     * `substring("abcdefg", 3, 5)` => `cde`
+     * `substring(strSamp, 4, 8)` => `'bbbbb' 'ccccc'` where `strSamp <- c("aaabbbbb", "aaaccccc")`
+     * `substring(strDate, 1, 4)` => `'2018' '2019'`  where `strDate <- c("2018-11-01", "2019-11-01")`
+3. Combining by rows or columns
+     * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
+     * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
+4. Naming rows and columns
+     * rownames(mat1) <- c("Jan", "Feb", "Mar")
+     * colnames(mat2) <- c("Height", "Weight", "Age")     
+
+
+###. Random Generator
+     * `runif()` `runif(num, min = , max = )` // default `min = 0` `max = 1`
+     * random integer generation: `trunc(runif(5,1,20)`
+     * `rnorm ()` `rnorm(num, mean = , sd = )` // default `mean = 0` `sd = 1`                                     
+     
+     NA: Not Available / NaN: Not a Number
