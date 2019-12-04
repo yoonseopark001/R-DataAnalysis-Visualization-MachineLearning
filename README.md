@@ -6,14 +6,33 @@
 
 
 ## 1. Introduction to R for data analysis
-x. andom generation
-
+x. Vector
+* assign & load
+- `a <- c(10, 20, 30)` `a[1] => 10` `a[-1] => 20 30`// starting from 1 in R
+- `a[1] <- 30` => `a
+- `x <- rnorm(100)`
+- `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
+* `length()`
+* `range()` // cf. `range()[1] == min()` `range()[2] == max()`
+* `mean()` `var()` `sd()`
+* vector merging
+ - `append(3, 4)` => 3 4 `c(x, y)` => '3 4` // cf. `paste(x, y)` `'x, y'`
+* operators
+* squence
+ - `seq(from = , to = , by = )` `seq( , , )`
+* replicable `rep(  , times= )` `rep( , )`
+ - `rep(1,5)` => `1 1 1 1 1`
+ - `rep(c(2, 4), 3)` => `2 4 2 4 2 4` // cf. `rep(2, 4, 3)` => `2 2 2`
+ - `rep(c('blue', 'green'), 3)` => 'blue' 'green' 'blue' 'green' 'blue' 'green'
+* `unique()`
+* boolean
 
 ## 0. Introduction to R for data analysis
 1. Introduction
      * `help()`
      * `example()`
      * `version`
+     * `ls()` `rm()` Managing memory 
      * Pre-loaded dataset
 2. Operators (with numbers and/or variables)
      * `+` `-` `*` `/`
@@ -27,24 +46,6 @@ x. andom generation
 5. Variables
     * scalar
     * vector 
-      * assign & load
-        - `a <- c(10, 20, 30)` `a[1] => 10` `a[-1] => 20 30`// starting from 1 in R
-        - `a[1] <- 30` => `a
-        - `x <- rnorm(100)
-        - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
-      * `length()`
-      * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
-      * `mean()` `var()` `sd()`
-      * vector merging
-         - `append(x, y)`
-         - `c(x, y)`
-      * operators
-      * squence
-         - `seq(from = , to = , by = )` `seq( , , )`
-      * replicable 'rep(  , times= )` `rep( , )`
-         - `rep(1,5)` => 1 1 1 1 1
-         - `rep(c(2, 4), 3)` => 2 4 2 4 2 4 // cf. `rep(2, 4, 3)` => 2 2 2
-         - `rep(c('blue', 'green'), 3)` => 'blue' 'green' 'blue' 'green' 'blue' 'green'
 6. Boolean
      * `==` `!=` `>` `<` `>=` `<=`
      * `&` `|`
@@ -76,12 +77,16 @@ Converting Data Type
           * `as.Date('2019/10/30', %Y/%m/%d)` 
           * `as.Date('19-10-30', %y-%m-%d)`
           * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29
-8. Basic Functions
-     * `ls()` `rm()` Managing memory 
-     * `Print()`, `Print( , quote=F)`
+8. Print(), paste(), cat(paste())
+     * `Print()` `Print( , quote=F)`
           * `sprintf("%s is %i years old, "John", 35)`
           * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
           * `sprintf(The height of "%s is %5.1f, "boy", 103.5)`
+     * print(paste("Hello", "World)" //  cf. `print("Hello", "World")` => `doesn't work' 
+     * `cat(paste("Hello", "\n", "World")` `cat(paste("Hello\n", "World")`
+     * `cat(paste("Hello", "\t", "World")` `cat(paste("Hello\t", "World")`
+     * paste("Answer is: ", 10) => `'Answer is 10'`
+
 9. Exploring Data
      * `head()` `tail()`
      * `unique()`
