@@ -1,13 +1,15 @@
-#### This covers the major topics in Data Analysis with R from scratch to Machine Learning and AI
+### This covers the major topics in Data Analysis with R from scratch to Machine Learning and AI
 
 * Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
      * Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
 [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 
+## 1. Introduction to R for data analysis
+x. andom generation
 
 
-### 0. Introduction to R for data analysis
+## 0. Introduction to R for data analysis
 1. Introduction
      * `help()`
      * `example()`
@@ -15,7 +17,7 @@
      * Pre-loaded dataset
 2. Operators (with numbers and/or variables)
      * `+` `-` `*` `/`
-     * `%/%` Floor division // c.f. `//` in Python
+     * `%/%` Floor division // cf. `//` in Python
      * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis
      * `**` `^`
 4. Math Functions
@@ -24,7 +26,25 @@
      * `sum()` `mean()` `max()` `min()` `median()` // e.g. sum(iris$Sepal.Length)
 5. Variables
     * scalar
-    * vector `a <- c(10,20,30)` `a[1] = 10` // starting from 1 in R
+    * vector 
+      * assign & load
+        - `a <- c(10, 20, 30)` `a[1] => 10` `a[-1] => 20 30`// starting from 1 in R
+        - `a[1] <- 30` => `a
+        - `x <- rnorm(100)
+        - `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
+      * `length()`
+      * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
+      * `mean()` `var()` `sd()`
+      * vector merging
+         - `append(x, y)`
+         - `c(x, y)`
+      * operators
+      * squence
+         - `seq(from = , to = , by = )` `seq( , , )`
+      * replicable 'rep(  , times= )` `rep( , )`
+         - `rep(1,5)` => 1 1 1 1 1
+         - `rep(c(2, 4), 3)` => 2 4 2 4 2 4 // cf. `rep(2, 4, 3)` => 2 2 2
+         - `rep(c('blue', 'green'), 3)` => 'blue' 'green' 'blue' 'green' 'blue' 'green'
 6. Boolean
      * `==` `!=` `>` `<` `>=` `<=`
      * `&` `|`
@@ -50,7 +70,7 @@ Converting Data Type
      * `as.data.frame()`
      * `as.factor()` // **useful** in data analysis
           * From `gender <- c('man', 'woman')` => character
-          * To `f_gender <- as.factor(gender)` => Factor w/ 2 levels "man","woman": 1 2 
+          * To `factorGender <- as.factor(gender)` => 'Factor w/ 2 levels "man","woman": 1 2' 
      * `as.Date()`
           * `as.Date('19/10/30', %y/%m/%d)`
           * `as.Date('2019/10/30', %Y/%m/%d)` 
