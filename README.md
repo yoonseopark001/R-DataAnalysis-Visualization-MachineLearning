@@ -8,18 +8,18 @@
 
 
 ## 1. Introduction to R for data analysis
-1. Introduction
+### 1. Introduction
      * `help()`
      * `example()`
      * `version`
      * `ls()` `rm()` Managing memory 
      * Pre-loaded dataset
-2. Operators (with numbers and/or variables)
+### 2. Operators (with numbers and/or variables)
      * `+` `-` `*` `/`
      * `%/%` Floor division // cf. `//` in Python
      * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis
      * `**` `^`
-4. Math Functions
+### 3. Math Functions
      * `sqrt()` `abs()`
      * `trunc()` `round()`
      * `sum()`
@@ -29,13 +29,13 @@
           - e.g. `sum(data[,3])` // sum of 3rd column
      * `mean()` `max()` `min()` `median()` // e.g. 
      * `na.rm = T` // e.g. 
-5. Boolean
+### 4. Boolean
      * `==` `!=` `>` `<` `>=` `<=`
      * `&` `|`
      * `xor(x,y)` True only if one of x,y is False
      * `any(x >= 1)` `all(x < 1)` // data size test
      * `is.vector(x)` // data type Test
-6. Testing Data Type: True (1) or False (0)
+### 5. Testing Data Type: True (1) or False (0)
      * `is.numeric()` 
      * `is.integer()` 
      * `is.logical()`
@@ -47,7 +47,7 @@
      * `is.Date()`
      * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
      * `is.nan()`
-7. Converting Data Type
+### 6. Converting Data Type
      * `as.numeric()` 
      * `as.integer()` 
      * `as.logical()`
@@ -62,7 +62,7 @@
           * `as.Date('2019/10/30', %Y/%m/%d)` 
           * `as.Date('19-10-30', %y-%m-%d)`
           * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29     
-8. Print
+### 7. Print
      * `Print()` `Print( , quote=F)`
           * `sprintf("%s is %i years old, "John", 35)`
           * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
@@ -74,7 +74,7 @@
      * `paste("2019", "11", "01")` => `'2019 11 01'`
      * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
      * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)    
-9. Vector
+### 8. Vector
     * assign & load
      - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
      - `a[1] <- 30` => 'a': 30 20 30
@@ -94,7 +94,7 @@
       - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
     * `unique()`
     * boolean `x == y` => `TRUE FALSE TRUE` where `x <- c(1, 2, 3)` `y <- c(1, 8, 5)`
-10. Data Frame  
+### 9. Data Frame  
     * Creating data.frame
       - `num = c(1:5)`
       - `name = c("Snack", "Bread", "Juice", "Milk", "Candy")`
@@ -118,7 +118,7 @@
       - Of course, you can still use `cbind`, if you order keys(index) using `orderBy` beforehand.
                         
 ## 2. Data Handling in R
-1. Exploring Data
+### 1. Exploring Data
      * `head()` `tail()`
      * `unique()`
      * `class()`
@@ -126,19 +126,16 @@
      * `str()`
      * `plot()`
      * `table()` `hist()`
-2. Extracting or replacing substrings in a character vector // useful in data cleansing
-     A. R function
+### 2. Extracting or replacing substrings in a character vector // useful in data cleansing
+#### A. R function
      * `substring("    ", from, to)`
      * `substring("abcdefg", 3, 5)` => `cde`
      * `substring(strSamp, 4, 8)` => `'bbbbb' 'ccccc'` where `strSamp <- c("aaabbbbb", "aaaccccc")`
      * `substring(strDate, 1, 4)` => `'2018' '2019'`  where `strDate <- c("2018-11-01", "2019-11-01")`
-     B. `stringr` package
-        (1) extract finding values, which is a type of list(key + value) in characters
-        (2) unlist (1) to convert it into vector
-        (3) convert (2) into numeric
+#### B. `stringr` package
      * `install.packages("stringr")` `library(stringr)`
      *  `str_extract()` `str_extract_all()` `str_length()` `str_c()` `str_c()` `str_sub()` `str_spilit()` `str_replace()` `str_located()` `str_locate()` `str_locate_all()
-        (1) extract finding values, which is a type of list(key + value) in characters
+##### (1) extract finding values, which is a type of list(key + value) in characters
      * `strR <- "HEbLLc12fO34hijiWORip099LD8ys766pa"`
      * str_extract(data, "[from-to]{digits)") // [from-to]: e.g. [0-9] [A-Z] [A-z] [가-힣] // {digit}: e.g. {1} {2,} 2 or above 
           - `str_extract(strR, "[0-9]")` => `'1'` // the first number from 0 to 9 of `strr` is `'1'`
@@ -147,8 +144,8 @@
           - `str_extract_all(strR, "[2-9]{2,}")` => `1. '34' '99' '766'`
           - `str_extract_all(strR,"[A-Z]{1,}") => `'HE' 'LL' 'O' 'WOR' 'LD'`
      * the `class` of the return is `list` with e.g. key: 1 and value: '34' '98' '76'
-        (2) unlist (1) to convert it into vector: `unlist(str_extract_all(strR, "[2-9]{2}"))` => `'34' '99' '76'` 
-        (3) convert (2) into numeric: `number as.numeric(unlist(str_extract_all(strR, "[2-9]{2}")))` => `34 99 76`
+##### (2) unlist (1) to convert it into vector: `unlist(str_extract_all(strR, "[2-9]{2}"))` => `'34' '99' '76'` 
+##### (3) convert (2) into numeric: `number as.numeric(unlist(str_extract_all(strR, "[2-9]{2}")))` => `34 99 76`
 
 3. Combining by rows or columns
      * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
