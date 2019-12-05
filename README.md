@@ -2,7 +2,7 @@
 
 * Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
 * Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
-[Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
+* [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 
 ## 1. Introduction to R for data analysis
@@ -11,7 +11,7 @@
 * `%/%` Floor division // cf. `//` in Python
 * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis 
 * `**` `^`
-* Set Operators: `union(x,y)` `intersect(x,y)` `setdiff(x,y)` // `sediff(totalPop, asiaPop)` total population - Asia population
+* Set operators: `union(x,y)` `intersect(x,y)` `setdiff(x,y)` // `sediff(totalPop, asiaPop)` total population - Asia population
 ### 2. Math Functions
 * `sqrt()` `abs()`
 * `trunc()` `round()`
