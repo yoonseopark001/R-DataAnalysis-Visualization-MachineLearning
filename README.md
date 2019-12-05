@@ -71,7 +71,15 @@
 - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
 - `a[1] <- 30` => 'a': 30 20 30
 - `x <- rnorm(100)`
-- `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`
+- `z <- 1:100` `z[1] =>  1` `z[c(2,50)] => 2 50``z[c(30:33),60)] = 30 31 32 33 60`  
+```
+number <- 1:10
+myVector <- c()   # assign blank(NULL)
+for(i in number){
+    print(i * 2)  # it is a just print output
+    myVector[i] <- i * 2   # the results should be assigned into myVector if you want to use it.
+}
+```
 * `length()`
 * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
 * operators
@@ -117,7 +125,9 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 * Pre-loaded dataset
 
 ## 2. Data Handling in R
-### 1. Exploring Data
+### 1.load Data file
+* `read.csv("path") // `read.csv("./Data/example.csv")`
+### 2. Exploring Data
 * `head()` `tail()`
 * `unique()`
 * `class()`
@@ -126,7 +136,7 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 * `plot()`
 * `table()` `hist()`
 
-### 2. Extracting or replacing substrings in a character vector // useful in data cleansing
+### 3. Extracting or replacing substrings in a character vector // useful in data cleansing
 
 #### A. `substring` function
   * `substring("    ", from, to)`
@@ -164,11 +174,11 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
   * `str_sub(data, from, to)` // substring
   * `str_spilit(data, "separate value")` // e.g. `str_spilit(data, ".")`
 
-### 3. Combining by rows or columns
+### 4. Combining by rows or columns
   * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
   * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category
 
-### 4. Naming rows and columns
+### 5. Naming rows and columns
   * `rownames(mat1) <- c("Jan", "Feb", "Mar")`
   * `colnames(mat2) <- c("Height", "Weight", "Age")`     
 
@@ -178,14 +188,34 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 ### 1. if
   * if: `if("condition") {<yes>}`
   * if else: `if("condition") {<yes>} else {<no>}`
+       * if("condition") {<yes>} else if("condition"{<yes>} else if("condition"{<yes>} else{<no>} [*Exercise 02: Grade*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2002%20Grade.ipynb)
   * ifelse: `ifelse("condition", <yes>, <no>}` // vector allowed only in ifelse
+
 ```
 if(numb %% 2 == 0){
            print("it's even")
            }else{
            print("it's odd")
 }
- ```
+```
+
+```
+score <- c(85, 95, 98)
+name  <- c("Adam", "Brad", "Carl")
+
+for(i in 1:3)
+    cat(paste(name[i],"=>", score[i],"\n"))
+
+Adam => 83
+Brad => 92
+Carl => 98
+```
+
+```
+i <- 1
+for(s in score){
+    cat(paste(name[i],"=>", s,"\n"))
+```
     
 ### 2. for
 ```
@@ -211,4 +241,5 @@ NA: Not Available / NaN: Not a Number
 
 
 # Exercise
-[01. Multiplication Tables](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
+[*Exercise 01: Multiplication Tables*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
+[*Exercise 02: Grade*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2002%20Grade.ipynb)
