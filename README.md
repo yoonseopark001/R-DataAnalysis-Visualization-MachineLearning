@@ -6,13 +6,13 @@
 
 
 ## 1. Introduction to R for data analysis
-### 2. Operators (with numbers and/or variables)
+### 1. Operators (with numbers and/or variables)
 * `+` `-` `*` `/`
 * `%/%` Floor division // cf. `//` in Python
 * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis 
 * `**` `^`
 * Set Operators: `union(x,y)` `intersect(x,y)` `setdiff(x,y)` // `sediff(totalPop, asiaPop)` total population - Asia population
-### 3. Math Functions
+### 2. Math Functions
 * `sqrt()` `abs()`
 * `trunc()` `round()`
 * `sum()`
@@ -22,13 +22,13 @@
   - e.g. `sum(data[,3])` // sum of 3rd column
 * `mean()` `max()` `min()` `median()`
 * `na.rm = T` // e.g. `sum(c(10, 20, NA, 40), na.rm = T)`
-### 4. Boolean
+### 3. Boolean
 * `==` `!=` `>` `<` `>=` `<=`
 * `&` `|`
 * `xor(x,y)` True only if one of x,y is False
 * `any(x >= 1)` `all(x < 1)` // data size test
 * `is.vector(x)` // data type Test
-### 5. Testing Data Type: True (1) or False (0)
+### 4. Testing Data Type: True (1) or False (0)
 * `is.numeric()` 
 * `is.integer()` 
 * `is.logical()`
@@ -40,7 +40,7 @@
 * `is.Date()`
 * `is.na()` If 'sum(is.na(<data>) > 0', there is(are) NA
 * `is.nan()`
-### 6. Converting Data Type
+### 5. Converting Data Type
 * `as.numeric()` 
 * `as.integer()` 
 * `as.logical()`
@@ -55,7 +55,7 @@
   * `as.Date('2019/10/30', %Y/%m/%d)` 
   * `as.Date('19-10-30', %y-%m-%d)`
   * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29   
-### 7. Print
+### 6. Print
 * `Print()` `Print( , quote=F)`
   * `sprintf("%s is %i years old, "John", 35)`
   * `sprintf(The weight of "%s is %5.2f, "boy", 12.25)`
@@ -67,7 +67,7 @@
 * `paste("2019", "11", "01")` => `'2019 11 01'`
 * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
 * `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)  
-### 8. Vector
+### 7. Vector
 * assign & load
 - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
 - `a[1] <- 30` => 'a': 30 20 30
@@ -95,7 +95,7 @@ for(i in number){
 - `rep(c('blue', 'green'), 3)` => `'blue' 'green' 'blue' 'green' 'blue' 'green'`
 * `unique()`
 * boolean `x == y` => `TRUE FALSE TRUE` where `x <- c(1, 2, 3)` `y <- c(1, 8, 5)`
-### 9. Data Frame  
+### 8. Data Frame  
 * Creating data.frame
 - `num = c(1:5)`
 - `name = c("Snack", "Bread", "Juice", "Milk", "Candy")`
@@ -229,7 +229,7 @@ sum1 <- 0
 ```
 
 ### 3. while: when you don't know how many times the loop should run
-[while(condition): sum of numbers from 1 to 100]
+* while(condition): sum of numbers from 1 to 100
 ```
 sum <- 0             # variable to be cummulative
 i <- 1               # starting point
@@ -240,7 +240,7 @@ while(i <= 100){
 } 
 print(sum)
 ```
-[while(T) and break condition]
+* while(T) and break condition
 ```
 sum <- 0 
 i <- 1
@@ -271,7 +271,7 @@ repeat{
 print(sum)
 
 ## 2. Function
-
+- [*Exercise 03: Frequency Table of Survey*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise_03%20Frequency%20Table%20of%20Survey.ipynb)
 
 
 . Random Generator
@@ -286,3 +286,5 @@ NA: Not Available / NaN: Not a Number
 # Exercise
 - [*Exercise 01: Multiplication Tables*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
 - [*Exercise 02: Grade*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2002%20Grade.ipynb)
+- [*Exercise 03: Frequency Table of Survey*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise_03%20Frequency%20Table%20of%20Survey.ipynb)
+
