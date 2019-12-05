@@ -11,6 +11,7 @@
 * `%/%` Floor division // cf. `//` in Python
 * `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis 
 * `**` `^`
+* Set Operators: `union(x,y)` `intersect(x,y)` `setdiff(x,y)` // `sediff(totalPop, asiaPop)` total population - Asia population
 ### 3. Math Functions
 * `sqrt()` `abs()`
 * `trunc()` `round()`
@@ -19,8 +20,8 @@
   - e.g. `sum(10, 20, 20, NA, na.rm = T)` // remove(ignore) NA value
   - e.g. `sum(data[1,])` // sum of 1st row
   - e.g. `sum(data[,3])` // sum of 3rd column
-* `mean()` `max()` `min()` `median()` // e.g. 
-* `na.rm = T` // e.g. 
+* `mean()` `max()` `min()` `median()`
+* `na.rm = T` // e.g. `sum(c(10, 20, NA, 40), na.rm = T)`
 ### 4. Boolean
 * `==` `!=` `>` `<` `>=` `<=`
 * `&` `|`
@@ -80,7 +81,7 @@ for(i in number){
     myVector[i] <- i * 2   # the results should be assigned into myVector if you want to use it.
 }
 ```
-* `length()`
+* `length()` 
 * `range()` // cf. `range()[1] == min()` `range()[2] == max()`
 * operators
 * `mean()` `var()` `sd()`
@@ -116,6 +117,7 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 - If those are not in order, `merge(x = df1, y = df2, by.x = "key of x", by.y = "key of y")`
   - e.g. `merge(height, weight, by.x = "ID(height's key)", by.y = "ID_Num(weight's key)")
 - Of course, you can still use `cbind`, if you order keys(index) using `orderBy` beforehand.
+ * `nrow()` `ncol()` 
 ### 9. etc ###
 * `help()`
 * `example()`
@@ -125,16 +127,16 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 * Pre-loaded dataset
 
 ## 2. Data Handling in R
-### 1.load Data file
+### 1. Load Data file
 * `read.csv("path") // `read.csv("./Data/example.csv")`
 ### 2. Exploring Data
 * `head()` `tail()`
 * `unique()`
 * `class()`
-* `summary()`: check the distance between median and mean for each column
+* `summary()` // to check the distance between median and mean for each column
 * `str()`
 * `plot()`
-* `table()` `hist()`
+* `table()` `hist()`// to check frequency
 
 ### 3. Extracting or replacing substrings in a character vector // useful in data cleansing
 
@@ -211,13 +213,14 @@ Brad => 92
 Carl => 98
 ```
 
+* alternatively,
 ```
 i <- 1
 for(s in score){
     cat(paste(name[i],"=>", s,"\n"))
 ```
     
-### 2. for
+### 2. for: when you know how many times the loop should run
 ```
 sum1 <- 0
     for (i in 1:1000){
@@ -225,7 +228,47 @@ sum1 <- 0
 }
 ```
 
-### 3. while
+### 3. while: when you don't know how many times the loop should run
+[while(condition): sum of numbers from 1 to 100]
+```
+sum <- 0             # variable to be cummulative
+i <- 1               # starting point
+
+while(i <= 100){
+    sum <- sum + i
+    i <- i + 1       # incremental
+} 
+print(sum)
+```
+[while(T) and break condition]
+```
+sum <- 0 
+i <- 1
+
+while(T){                 
+    sum <- sum + i
+    i <- i + 1
+    if (sum > 100){
+        break}            # break condition
+}
+print(i)
+print(sum)
+```
+### 3. repeat // seldom used in data analysis
+```
+sum <- 0
+i <- 1
+
+repeat{
+    sum <- sum + i 
+    i <- i + 1
+    if(i > 10){ 
+        break
+    }
+}
+```
+
+print(sum)
 
 ## 2. Function
 
@@ -241,5 +284,5 @@ NA: Not Available / NaN: Not a Number
 
 
 # Exercise
-[*Exercise 01: Multiplication Tables*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
-[*Exercise 02: Grade*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2002%20Grade.ipynb)
+- [*Exercise 01: Multiplication Tables*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
+- [*Exercise 02: Grade*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2002%20Grade.ipynb)
