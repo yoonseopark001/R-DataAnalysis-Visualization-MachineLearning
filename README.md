@@ -4,16 +4,6 @@
 * Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
 [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
-# _Table of Contents_
-## 1. Introduction to R for data analysis
-## 2. Data Handling in R
-
-
-<n></n>
-
-
-
-
 
 ## 1. Introduction to R for data analysis
 ### 1. Introduction ###
@@ -134,33 +124,62 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 * `str()`
 * `plot()`
 * `table()` `hist()`
-### 2. Extracting or replacing substrings in a character vector // useful in data cleansing
-#### A. R function
-* `substring("    ", from, to)`
-* `substring("abcdefg", 3, 5)` => `cde`
-* `substring(strSamp, 4, 8)` => `'bbbbb' 'ccccc'` where `strSamp <- c("aaabbbbb", "aaaccccc")`
-* `substring(strDate, 1, 4)` => `'2018' '2019'`  where `strDate <- c("2018-11-01", "2019-11-01")`
-#### B. `stringr` package
-* `install.packages("stringr")` `library(stringr)`
-*  `str_extract()` `str_extract_all()` `str_length()` `str_c()` `str_c()` `str_sub()` `str_spilit()` `str_replace()` `str_located()` `str_locate()` `str_locate_all()
-##### (1) extract finding values, which is a type of list(key + value) in characters
-* `strR <- "HEbLLc12fO34hijiWORip099LD8ys766pa"`
-* str_extract(data, "[from-to]{digits)") // [from-to]: e.g. [0-9] [A-Z] [A-z] [가-힣] // {digit}: e.g. {1} {2,} 2 or above 
-  - `str_extract(strR, "[0-9]")` => `'1'` // the first number from 0 to 9 of `strr` is `'1'`
-  - `str_extract(strR, "[2-9]{2}")` => `'34'` // the first 2-digit number from 2 to 9 of`strr` is `'34'`
-* str_extract_all(data, "[from-to]{digits)")
-  - `str_extract_all(strR, "[2-9]{2,}")` => `1. '34' '99' '766'`
-  - `str_extract_all(strR,"[A-Z]{1,}") => `'HE' 'LL' 'O' 'WOR' 'LD'`
-* the `class` of the return is `list` with e.g. key: 1 and value: '34' '98' '76'
-##### (2) unlist (1) to convert it into vector: `unlist(str_extract_all(strR, "[2-9]{2}"))` => `'34' '99' '76'` 
-##### (3) convert (2) into numeric: `number as.numeric(unlist(str_extract_all(strR, "[2-9]{2}")))` => `34 99 76`
 
-3. Combining by rows or columns
-* `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
-* `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
-4. Naming rows and columns
-* `rownames(mat1) <- c("Jan", "Feb", "Mar")`
-* `colnames(mat2) <- c("Height", "Weight", "Age")`     
+### 2. Extracting or replacing substrings in a character vector // useful in data cleansing
+
+#### A. `substring` function
+  * `substring("    ", from, to)`
+  * `substring("abcdefg", 3, 5)` => `cde`
+  * `substring(strSamp, 4, 8)` => `'bbbbb' 'ccccc'` where `strSamp <- c("aaabbbbb", "aaaccccc")`
+  * `substring(strDate, 1, 4)` => `'2018' '2019'`  where `strDate <- c("2018-11-01", "2019-11-01")`
+  
+#### B. `stringr` package
+  * Package: `install.packages("stringr")` `library(stringr)`
+  
+  * `str_extract()` `str_extract_all()` 
+  
+     (1) extract finding values, which is a type of list(key + value) in characters
+      * `strR <- "HEbLLc12fO34hijiWORip099LD8ys766pa"`
+      * str_extract(data, "[from-to]{digits)") // [from-to]: e.g. [0-9] [A-Z] [A-z] [가-힣] [^A-z] ^ means NOT// {digit}: e.g. {1} {2,} 2 or above 
+        - `str_extract(strR, "[0-9]")` => `'1'` // the first number from 0 to 9 of `strr` is `'1'`
+        - `str_extract(strR, "[2-9]{2}")` => `'34'` // the first 2-digit number from 2 to 9 of`strr` is `'34'`
+      * str_extract_all(data, "[from-to]{digits)")
+        - `str_extract_all(strR, "[2-9]{2,}")` => `1. '34' '99' '766'`
+        - `str_extract_all(strR,"[A-Z]{1,}") => `1. 'HE' 'LL' 'O' 'WOR' 'LD'`
+        - `str_extract_all(strR,"[^A-z]") => `'1' '2' '3' '4' '0' '9' '9' '8' '7' '6' '6'`
+        - `str_extract_all(strR,"LL") => `1. LL`
+      * the `class` of the return is `list` with e.g. key: 1 and value: '34' '98' '76'
+
+     (2) unlist (1) to convert it into vector: `unlist(str_extract_all(strR, "[2-9]{2}"))` => `'34' '99' '76'` 
+
+     (3) convert (2) into numeric: `number as.numeric(unlist(ste_extract_all(strR, "[2-9]{2}")))` => `34 99 76`
+
+  * `str_length()` 
+  * `str_locate(data,"finding value")` returns `start` and `end`
+  * `str_to_upper()` `str_to_lower()`
+  * `str_replace()` `str_replace_all(data,"as-is","to-be")` // start test-run with `str_replace`, then `str_replace_all
+       * `str_replace_all(data, "as-is", " "): to eliminate "as-is // useful tip! (e.g. web crawling, word cloud, NLP)
+  * `str_c()` // add additional string to the existing ond
+  * `str_sub(data, from, to)` // substring
+  * `str_spilit(data, "separate value")` // e.g. `str_spilit(data, ".")`
+
+### 3. Combining by rows or columns
+  * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
+  * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
+
+### 4. Naming rows and columns
+  * `rownames(mat1) <- c("Jan", "Feb", "Mar")`
+  * `colnames(mat2) <- c("Height", "Weight", "Age")`     
+
+## 2. Loop
+### 1. if
+
+
+
+
+
+
+
 
 
 ###. Random Generator
