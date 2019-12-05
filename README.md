@@ -6,16 +6,10 @@
 
 
 ## 1. Introduction to R for data analysis
-### 1. Introduction ###
-* `help()`
-* `example()`
-* `version`
-* `ls()` `rm()` Managing memory 
-* Pre-loaded dataset
 ### 2. Operators (with numbers and/or variables)
 * `+` `-` `*` `/`
 * `%/%` Floor division // cf. `//` in Python
-* `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis
+* `%%`  Modulus // Useful to check if values are True (1) or False (0) in Data Analysis 
 * `**` `^`
 ### 3. Math Functions
 * `sqrt()` `abs()`
@@ -59,7 +53,7 @@
   * `as.Date('19/10/30', %y/%m/%d)`
   * `as.Date('2019/10/30', %Y/%m/%d)` 
   * `as.Date('19-10-30', %y-%m-%d)`
-  * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29     
+  * `as.Date('19/10/30', %y/%m/%d) - 1` => 19/10/29   
 ### 7. Print
 * `Print()` `Print( , quote=F)`
   * `sprintf("%s is %i years old, "John", 35)`
@@ -71,7 +65,7 @@
 * `paste("Answer is: ", 10)` => `'Answer is 10'`
 * `paste("2019", "11", "01")` => `'2019 11 01'`
 * `paste("2019", "11", "01", sep=".")` => `'2019.11.01'` // sep=" ", sep="-"
-* `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)    
+* `paste(x, collapse = "-")` => `'1-2-3'` where x = c(1, 2, 3)  
 ### 8. Vector
 * assign & load
 - `a <- c(10, 20, 30)` `a[1]` => `10` `a[-1]` => `20 30`// starting from 1 in R
@@ -114,6 +108,13 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 - If those are not in order, `merge(x = df1, y = df2, by.x = "key of x", by.y = "key of y")`
   - e.g. `merge(height, weight, by.x = "ID(height's key)", by.y = "ID_Num(weight's key)")
 - Of course, you can still use `cbind`, if you order keys(index) using `orderBy` beforehand.
+### 9. etc ###
+* `help()`
+* `example()`
+* `version`
+* `ls()` `rm()` managing memory 
+* `readline()`  The value is input as `character`. If needed calculation, use as.integer() or as.numeric
+* Pre-loaded dataset
 
 ## 2. Data Handling in R
 ### 1. Exploring Data
@@ -165,7 +166,7 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 
 ### 3. Combining by rows or columns
   * `mat1 <- rbind(jan, feb, mar)` //  e.g. to add data from the latest information
-  * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category(s)
+  * `mat2 <- cbind(height, weight, age)` //  e.g. to add new category
 
 ### 4. Naming rows and columns
   * `rownames(mat1) <- c("Jan", "Feb", "Mar")`
@@ -173,10 +174,20 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 
 ## 2. Loop
 ### 1. if
+  * if: `if("condition") {<yes>}`
+  * if else: `if("condition") {<yes>} else {<no>}`
+  * ifelse: `ifelse("condition", <yes>, <no>}` // vector allowed only in ifelse
+       *  e.g. if(numb %% 2 == 0){print("it's even")}else{print("it's odd")}
+       
+### 2. for
+    e.g.
+    sum1 <- 0
+    for (i in 1:1000){
+         sum1 <- sum 1 + i
+    }
+    
 
-
-
-
+### 2. while
 
 
 
