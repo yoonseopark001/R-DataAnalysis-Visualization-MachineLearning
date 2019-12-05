@@ -172,36 +172,42 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
   * `rownames(mat1) <- c("Jan", "Feb", "Mar")`
   * `colnames(mat2) <- c("Height", "Weight", "Age")`     
 
-## 2. Loop
+## 2. Loop 
+*Exercise 01: Multiplication Tables*
 ### 1. if
   * if: `if("condition") {<yes>}`
   * if else: `if("condition") {<yes>} else {<no>}`
   * ifelse: `ifelse("condition", <yes>, <no>}` // vector allowed only in ifelse
-
-```if(numb %% 2 == 0){
+```
+if(numb %% 2 == 0){
            print("it's even")
            }else{
            print("it's odd")
-     }```
+}
+ ```
     
 ### 2. for
-
-```sum1 <- 0
+```
+sum1 <- 0
     for (i in 1:1000){
          sum1 <- sum1 + i
-    }```
+}
+```
+
+### 3. while
+
+## 2. Function
 
 
-### 2. while
 
-
-
-
-
-###. Random Generator
+. Random Generator
 
 * `runif()` `runif(num, min = , max = )` // default `min = 0` `max = 1`
 * random integer generation: `trunc(runif(5,1,20)`
 * `rnorm ()` `rnorm(num, mean = , sd = )` // default `mean = 0` `sd = 1`                                     
 
 NA: Not Available / NaN: Not a Number
+
+
+# Exercise
+01. Multiplication Tables
