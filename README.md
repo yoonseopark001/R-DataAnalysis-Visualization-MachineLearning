@@ -173,7 +173,8 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
   * `colnames(mat2) <- c("Height", "Weight", "Age")`     
 
 ## 2. Loop 
-*Exercise 01: Multiplication Tables*
+[*Exercise 01: Multiplication Tables*](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
+
 ### 1. if
   * if: `if("condition") {<yes>}`
   * if else: `if("condition") {<yes>} else {<no>}`
@@ -210,4 +211,4 @@ NA: Not Available / NaN: Not a Number
 
 
 # Exercise
-01. Multiplication Tables
+[01. Multiplication Tables](https://github.com/yoonseopark001/Data-Analysis-with-R/blob/master/R_Exercise%2001%20Multiplication%20Tables.ipynb)
