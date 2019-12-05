@@ -177,20 +177,20 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
   * if: `if("condition") {<yes>}`
   * if else: `if("condition") {<yes>} else {<no>}`
   * ifelse: `ifelse("condition", <yes>, <no>}` // vector allowed only in ifelse
+
+```if(numb %% 2 == 0){
+           print("it's even")
+           }else{
+           print("it's odd")
+     }```
     
-  if(numb %% 2 == 0){
-         print("it's even")
-         }else{
-         print("it's odd")
-    }
-       
 ### 2. for
-    
-    sum1 <- 0
+
+```sum1 <- 0
     for (i in 1:1000){
          sum1 <- sum1 + i
-    }
-    
+    }```
+
 
 ### 2. while
 
