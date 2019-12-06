@@ -136,6 +136,7 @@ cf. `supermarket[,3]` or 'supermarket$price' returns `vector` `5 3 3 2 1` as a `
 * `summary()` // to check the distance between median and mean for each column
 * `str()`
 * `plot()`
+* `boxplot()` // useful to visually see if there is outlier
 * `table()` `hist()`// to check frequency
 
 ### 3. Extracting or replacing substrings in a character vector // useful in data cleansing
