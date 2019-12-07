@@ -5,7 +5,7 @@
 * [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 # Statistics
-Frequency Table of Survey
+Frequency Table of Survey  
 Variation Comparison of Products with different means
 
 # Programming
