@@ -5,10 +5,10 @@
 * [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 # Data Analysis
-Frequency Table with Survey data
-Variation Comparison of Products with Different Means  with Cafe Data
-Simple Regression with Height and Weight data
-Multiple Regression with Attitude data
+Frequency Table with Survey data  
+Variation Comparison of Products with Different Means with sales data  
+Simple Regression with Height and Weight data  
+Multiple Regression with Attitude data  
 
 # Programming
 Multiplication Tables  
