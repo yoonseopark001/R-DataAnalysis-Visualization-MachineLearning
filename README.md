@@ -4,6 +4,11 @@
 * Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
 * [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
+# Machine Learning
+KNN (N-Nearest Neighbors) with iris data
+KNN (N-Nearest Neighbors) with two columns of iris data
+
+
 # Data Analysis
 Frequency Table with Survey data  
 Variation Comparison of Products with Different Means with sales data  
