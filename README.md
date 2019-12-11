@@ -5,7 +5,7 @@
 * [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 # Machine Learning
-K-Means Clustering with iris data
+K-Means Clustering with iris data  
 KNN (N-Nearest Neighbors) with iris data  
 KNN (N-Nearest Neighbors) with two columns of iris data  
 nnet (Neural Networks) - Multinominal Logistic Regression with iris data
