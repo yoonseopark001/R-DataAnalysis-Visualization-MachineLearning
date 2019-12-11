@@ -7,7 +7,7 @@
 # Machine Learning
 KNN (N-Nearest Neighbors) with iris data  
 KNN (N-Nearest Neighbors) with two columns of iris data  
-nnet (Neural Networks) - Multinominal Logistic Regression
+nnet (Neural Networks) - Multinominal Logistic Regression with iris data
 
 
 # Data Analysis
