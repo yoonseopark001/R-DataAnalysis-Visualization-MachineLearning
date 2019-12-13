@@ -6,7 +6,7 @@
 
 # Machine Learning
 * nnet (Neural Networks)
-* SVM (Support Vector Machine Learning with iris data
+* SVM (Support Vector Machine Learning) Classifier with iris data
 * K-Means Clustering with iris data  
 * KNN (N-Nearest Neighbors) with iris data  
 * KNN (N-Nearest Neighbors) with two columns of iris data  
