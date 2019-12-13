@@ -5,7 +5,8 @@
 * [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
 
 # Machine Learning
-* nnet (Neural Networks)
+* ctree (Conditional Inference Trees) - Decision Tree with iris data  
+* nnet (Neural Networks) with iris data
 * SVM (Support Vector Machine Learning) Classifier with iris data
 * K-Means Clustering with iris data  
 * KNN (N-Nearest Neighbors) with iris data  
