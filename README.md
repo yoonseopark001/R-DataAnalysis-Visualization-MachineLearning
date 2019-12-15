@@ -1,9 +1,5 @@
 ### This covers the major topics in Data Analysis with R from scratch to Machine Learning and AI
 
-* Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
-* Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
-* [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
-
 # Machine Learning
 * ctree (Conditional Inference Trees) - Decision Tree with iris data  
 * randomForest with iris data  
@@ -24,7 +20,7 @@
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
 
-## Statistics
+# Statistics
 * Shapiro-Wilk normality test
 * Chi-squared test 
 * t-test: one sample t-test, two sample t-test  
@@ -33,3 +29,7 @@
 # Programming
 * Multiplication Tables  
 * Grade Evaluation
+
+* Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
+* Initially working with Anaconda, I moved to Docker mainly because Docker can show Korean characters in R charts.
+* [Install Guideline for Docker](https://datascienceschool.net/view-notebook/03c5b5a96a614ee588a74f05c720e67c/)
