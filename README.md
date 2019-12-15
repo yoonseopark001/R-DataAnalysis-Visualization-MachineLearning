@@ -18,7 +18,8 @@
 # Data Analysis
 * Frequency Table with Survey data  
 * Variation Comparison of Products with Different Means with sales data  
-* PCA (Principal Component Analysis) with pasta data (customer survey)  
+* PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
+* PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
 * Simple Linear Regression with Height and Weight data
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
