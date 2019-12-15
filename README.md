@@ -26,7 +26,8 @@
 
 ## Statistics
 * Shapiro-Wilk normality test
-* Chi-squared test  
+* Chi-squared test 
+* t-test: one sample t-test, two sample t-test  
 * Fisher's exact test  
 
 # Programming
