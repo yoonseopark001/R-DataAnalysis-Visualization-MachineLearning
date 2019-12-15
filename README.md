@@ -1,4 +1,4 @@
-### This covers the major topics in Data Analysis with R from scratch to Machine Learning and AI
+### This covers the major topics in Data Analysis with R.
 
 ## Machine Learning
 * ctree (Conditional Inference Trees) - Decision Tree with iris data  
