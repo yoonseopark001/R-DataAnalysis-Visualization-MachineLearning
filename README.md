@@ -19,6 +19,7 @@
 * Simple Linear Regression with Height and Weight data
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
+* Simple Linear Regression and Multiple Regression with Student Data
 
 ## Statistics
 * Shapiro-Wilk normality test
