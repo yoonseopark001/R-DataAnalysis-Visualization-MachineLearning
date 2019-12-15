@@ -18,7 +18,8 @@
 # Data Analysis
 * Frequency Table with Survey data  
 * Variation Comparison of Products with Different Means with sales data  
-* Simple Regression with Height and Weight data  
+* Simple Linear Regression with Height and Weight data
+* Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
 
 # Programming
