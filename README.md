@@ -25,6 +25,7 @@
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
 
 ## Statistics
+* Shapiro-Wilk normality test
 * Chi-squared test  
 * Fisher's exact test  
 
