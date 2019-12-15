@@ -1,6 +1,6 @@
 ### This covers the major topics in Data Analysis with R from scratch to Machine Learning and AI
 
-# Machine Learning
+## Machine Learning
 * ctree (Conditional Inference Trees) - Decision Tree with iris data  
 * randomForest with iris data  
 * randomForest with Mushroom data (UCI Machine Learning Repository)  
@@ -11,7 +11,7 @@
 * KNN (N-Nearest Neighbors) with two columns of iris data  
 * nnet - Multinominal Logistic Regression with iris data
 
-# Data Analysis
+## Data Analysis
 * Frequency Table with Survey data  
 * Variation Comparison of Products with Different Means with sales data  
 * PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
@@ -20,13 +20,14 @@
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
 
-# Statistics
+## Statistics
 * Shapiro-Wilk normality test
 * Chi-squared test 
 * t-test: one sample t-test, two sample t-test  
 * Fisher's exact test  
+* Correlation test  
 
-# Programming
+## Programming
 * Multiplication Tables  
 * Grade Evaluation
 
