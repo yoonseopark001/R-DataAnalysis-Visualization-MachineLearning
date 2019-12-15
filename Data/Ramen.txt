@@ -1,0 +1,1 @@
+	Noodle	Package	SoupShinRamen	2	4	5Chapaghetti	5	2	1RiceSariGom	3	4	3Mupama	3	3	5AnseongTangMen	1	2	3SquidJjamppong	1	3	4SpicyUdon	3	3	4SpicyChickenFlavor	2	3	5
