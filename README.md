@@ -18,8 +18,9 @@
 * PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
 * Simple Linear Regression with Height and Weight data
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
-* Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
 * Simple Linear Regression and Multiple Regression with Student Data
+* Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
+* Multiple Regression and Simple Linear Regression & ML with iris Data
 
 ## Statistics
 * Shapiro-Wilk normality test
