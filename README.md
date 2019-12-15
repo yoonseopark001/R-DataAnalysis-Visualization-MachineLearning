@@ -24,6 +24,10 @@
 * Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * Multiple Regression with attitude data (The Chatterjee–Price Attitude Data)
 
+## Statistics
+* Chi-squared test  
+* Fisher's exact test  
+
 # Programming
 * Multiplication Tables  
 * Grade Evaluation
