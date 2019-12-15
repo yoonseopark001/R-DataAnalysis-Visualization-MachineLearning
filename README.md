@@ -6,7 +6,8 @@
 
 # Machine Learning
 * ctree (Conditional Inference Trees) - Decision Tree with iris data  
-* randomForest with iris data
+* randomForest with iris data  
+* randomForest with Mushroom data (UCI Machine Learning Repository)  
 * nnet (Neural Networks) with iris data
 * SVM (Support Vector Machine Learning) Classifier with iris data
 * K-Means Clustering with iris data  
