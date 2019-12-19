@@ -1,7 +1,7 @@
 ### This repository covers the major topics in Data Analysis with R.
 
-## Project
-* Titanic: Machine Learning from Disaster
+## Practice
+* Titanic: Machine Learning & Data Analysis
 
 ## Machine Learning
 * ctree (Conditional Inference Trees) - Decision Tree with iris data  
