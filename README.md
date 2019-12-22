@@ -8,9 +8,9 @@
 * ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data `set.seed` `ctree` `plot` `confusionMatrix`
 * ML02 randomForest with iris data `subset` `predict` `randomForest` `table`  
 * ML02_1 randomForest with Mushroom data (UCI Machine Learning Repository) `for` `nrow` `subset` `randomForest`  
-* ML03 nnet (Neural Networks) with iris data 
-* ML04 SVM (Support Vector Machine Learning) Classifier with iris data
-* ML05 K-Means Clustering with iris data  
+* ML03 nnet (Neural Networks) with iris data `cbind` `apply` `sample` `nnet` `predict`   
+* ML04 SVM (Support Vector Machine Learning) Classifier with iris data `subset` `svm` `predict`
+* ML05 K-Means Clustering with iris data `function` `sapply` `scale` `kmeans`  
 * ML06 KNN (N-Nearest Neighbors) with iris data + EDA `library(class)` `knn` `for`
 * ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data `dim` `plot` `points` `qplot`  
 * ML07 nnet - Multinominal Logistic Regression with iris data `multinom`
@@ -21,8 +21,8 @@
 * DA03 PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey) `prcomp` `biplot`
 * DA03_1 PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
 * DA04 Simple Linear Regression with Height and Weight data `lm` `plot` `abline`
-* DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
-* DA04_2 Simple Linear Regression and Multiple Regression with Student Data
+* DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest) `subset` `rownames`  
+* DA04_2 Simple Linear Regression and Multiple Regression with Student Data `cor` `lm` `step`
 * DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data 
 * DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data) `lm` `step`
 
