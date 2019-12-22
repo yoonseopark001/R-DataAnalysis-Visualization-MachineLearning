@@ -19,7 +19,7 @@
 * DA01 Frequency Table with Survey data  
 * DA02 Variation Comparison of Products with Different Means with sales data  
 * DA03 PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
-* DA03_1 PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
+* DA03_1 PCA with Ramen data  
 * DA04 Simple Linear Regression with Height and Weight data
 * DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * DA04_2 Simple Linear Regression and Multiple Regression with Student Data
