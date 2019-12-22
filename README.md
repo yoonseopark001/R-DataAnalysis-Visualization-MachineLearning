@@ -11,8 +11,8 @@
 * ML03 nnet (Neural Networks) with iris data
 * ML04 SVM (Support Vector Machine Learning) Classifier with iris data
 * ML05 K-Means Clustering with iris data  
-* ML06 KNN (N-Nearest Neighbors) with iris data  
-* ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data  
+* ML06 KNN (K-Nearest Neighbors) with iris data  
+* ML06_1 KNN (K-Nearest Neighbors) with two columns of iris data  
 * ML07 nnet - Multinominal Logistic Regression with iris data
 
 ## Data Analysis
