@@ -17,25 +17,25 @@
 
 ## Data Analysis
 * DA01 Frequency Table with Survey data  
-* DA02 Variation Comparison of Products with Different Means with sales data  
-* DA03 PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
+* DA02 Variation Comparison of Products with Different Means with sales data  `cut` `stem`  
+* DA03 PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey) `prcomp` `biplot`
 * DA03_1 PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
-* DA04 Simple Linear Regression with Height and Weight data
+* DA04 Simple Linear Regression with Height and Weight data `lm` `plot` `abline`
 * DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * DA04_2 Simple Linear Regression and Multiple Regression with Student Data
-* DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data
+* DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data 
 * DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data) `lm` `step`
 
 ## Statistics
-* Stat01 Shapiro-Wilk normality test
-* Stat02 Chi-squared test 
-* Stat03 t-test: one sample t-test, two sample t-test  
-* Stat04 Fisher's exact test  
+* Stat01 Shapiro-Wilk normality test `shapiro.test`
+* Stat02 Chi-squared test `chisq.test`
+* Stat03 t-test: one sample t-test, two sample t-test `t.test`  
+* Stat04 Fisher's exact test `fisher.test`  
 * Stat05 Correlation test `cor` `cor.test`  
 
 ## Programming
-* Prog01 Multiplication Tables  
-* Prog02 Grade Evaluation
+* Prog01 Multiplication Tables `for` `if`  `function` `cat` `paste`  
+* Prog02 Grade Evaluation `if` `readline`  
 
 ## Environment
 * Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
