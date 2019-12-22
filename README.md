@@ -1,6 +1,6 @@
 ### This repository covers the major topics in Data Analysis with R.
 
-## Practice
+## Project
 * DSProject01 Titanic: Machine Learning & Data Analysis [Kaggle]  
 * DSProject01_1 Titanic: Machine Learning & Data Analysis + Visualization
 
