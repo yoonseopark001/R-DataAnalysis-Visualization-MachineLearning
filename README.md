@@ -24,8 +24,7 @@
 * DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
 * DA04_2 Simple Linear Regression and Multiple Regression with Student Data
 * DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data
-* DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
-`step`
+* DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data) `lm` `step`
 
 ## Statistics
 * Stat01 Shapiro-Wilk normality test
