@@ -31,7 +31,7 @@
 * Stat02 Chi-squared test 
 * Stat03 t-test: one sample t-test, two sample t-test  
 * Stat04 Fisher's exact test  
-* Stat05 Correlation test  
+* Stat05 Correlation test `cor` `cor.test`  
 
 ## Programming
 * Prog01 Multiplication Tables  
