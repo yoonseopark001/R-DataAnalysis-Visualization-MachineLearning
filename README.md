@@ -27,7 +27,7 @@
 * DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data) `lm` `step`
 
 ## Data Visualization
-* DV01 Plot and Style Argument + Multiple Plots with Time-series data `plot` `par(mfrow())`
+* DV01 Plot and Style Argument with Time-series data + Multiple Plots `plot` `par(mfrow())`
 * DV02 Plot Argument details in type, lty, pch `plot` `type` `lty` `pch`  
 
 ## Statistics
