@@ -1,41 +1,41 @@
 ### This repository covers the major topics in Data Analysis with R.
 
 ## Practice
-* Titanic: Machine Learning & Data Analysis [Kaggle]  
-* Titanic: Machine Learning & Data Analysis + Visualization
+* Proj01 Titanic: Machine Learning & Data Analysis [Kaggle]  
+* Proj01-1 Titanic: Machine Learning & Data Analysis + Visualization
 
 ## Machine Learning
-* ctree (Conditional Inference Trees) - Decision Tree with iris data  
-* randomForest with iris data  
-* randomForest with Mushroom data (UCI Machine Learning Repository)  
-* nnet (Neural Networks) with iris data
-* SVM (Support Vector Machine Learning) Classifier with iris data
-* K-Means Clustering with iris data  
-* KNN (N-Nearest Neighbors) with iris data  
-* KNN (N-Nearest Neighbors) with two columns of iris data  
-* nnet - Multinominal Logistic Regression with iris data
+* ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data  
+* ML02 randomForest with iris data  
+* ML02_1 randomForest with Mushroom data (UCI Machine Learning Repository)  
+* ML03 nnet (Neural Networks) with iris data
+* ML04 SVM (Support Vector Machine Learning) Classifier with iris data
+* ML05 K-Means Clustering with iris data  
+* ML06 KNN (N-Nearest Neighbors) with iris data  
+* ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data  
+* ML07 nnet - Multinominal Logistic Regression with iris data
 
 ## Data Analysis
-* Frequency Table with Survey data  
-* Variation Comparison of Products with Different Means with sales data  
-* PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
-* PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
-* Simple Linear Regression with Height and Weight data
-* Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
-* Simple Linear Regression and Multiple Regression with Student Data
-* Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
-* Multiple Regression and Simple Linear Regression & ML with iris Data
+* DA01 Frequency Table with Survey data  
+* DA02 Variation Comparison of Products with Different Means with sales data  
+* DA03 PCA (Principal Component Analysis) with Pasta data (customer satisfaction survey)
+* DA03_1 PCA (Principal Component Analysis) with Ramen data (customer satisfaction survey)  
+* DA04 Simple Linear Regression with Height and Weight data
+* DA04_1 Simple Linear Regression with Seoul Accident Data (Comparison of Accuracy: vs. randomForest)  
+* DA04_2 Simple Linear Regression and Multiple Regression with Student Data
+* DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data
+* DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data)
 
 ## Statistics
-* Shapiro-Wilk normality test
-* Chi-squared test 
-* t-test: one sample t-test, two sample t-test  
-* Fisher's exact test  
-* Correlation test  
+* Stat01 Shapiro-Wilk normality test
+* Stat02 Chi-squared test 
+* Stat03 t-test: one sample t-test, two sample t-test  
+* Stat04 Fisher's exact test  
+* Stat05 Correlation test  
 
 ## Programming
-* Multiplication Tables  
-* Grade Evaluation
+* Prog01 Multiplication Tables  
+* Prog02 Grade Evaluation
 
 ## Environment
 * Environment: R, Jupyter Notebook, Docker, Mac OS Catalina 10.15.x
