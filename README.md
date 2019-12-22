@@ -28,7 +28,7 @@
 
 ## Data Visualization
 * DV01 Plot and Style Argument + Multiple Plots with Time-series data `plot` `par(mfrow())`
-* DV02 Plot Argument details in tyle, lty, pch `plot` `type` `lty` `pch`  
+* DV02 Plot Argument details in type, lty, pch `plot` `type` `lty` `pch`  
 
 ## Statistics
 * Stat01 Shapiro-Wilk normality test `shapiro.test`
