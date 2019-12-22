@@ -26,6 +26,10 @@
 * DA04_3 Multiple Regression and Simple Linear Regression & ML with iris Data 
 * DA05 Multiple Regression with attitude data (the Chatterjee–Price Attitude Data) `lm` `step`
 
+## Data Visualization
+* DV01 Plot and Style Argument + Multiple Plots with Time-series data `plot` `par(mfrow())`
+* DV02 Plot Argument details in tyle, lty, pch `plot` `type` `lty` `pch`  
+
 ## Statistics
 * Stat01 Shapiro-Wilk normality test `shapiro.test`
 * Stat02 Chi-squared test `chisq.test`
