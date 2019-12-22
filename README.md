@@ -5,15 +5,15 @@
 * Proj01_1 Titanic: Machine Learning & Data Analysis + Visualization
 
 ## Machine Learning
-* ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data  
-* ML02 randomForest with iris data  
-* ML02_1 randomForest with Mushroom data (UCI Machine Learning Repository)  
-* ML03 nnet (Neural Networks) with iris data
+* ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data `set.seed` `ctree` `plot` `confusionMatrix`
+* ML02 randomForest with iris data `subset` `predict` `randomForest` `table`  
+* ML02_1 randomForest with Mushroom data (UCI Machine Learning Repository) `for` `nrow` `subset` `randomForest`  
+* ML03 nnet (Neural Networks) with iris data 
 * ML04 SVM (Support Vector Machine Learning) Classifier with iris data
 * ML05 K-Means Clustering with iris data  
-* ML06 KNN (N-Nearest Neighbors) with iris data  
-* ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data  
-* ML07 nnet - Multinominal Logistic Regression with iris data
+* ML06 KNN (N-Nearest Neighbors) with iris data + EDA `library(class)` `knn` `for`
+* ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data `dim` `plot` `points` `qplot`  
+* ML07 nnet - Multinominal Logistic Regression with iris data `multinom`
 
 ## Data Analysis
 * DA01 Frequency Table with Survey data  
