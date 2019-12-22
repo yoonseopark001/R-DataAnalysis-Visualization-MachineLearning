@@ -2,7 +2,7 @@
 
 ## Practice
 * Proj01 Titanic: Machine Learning & Data Analysis [Kaggle]  
-* Proj01-1 Titanic: Machine Learning & Data Analysis + Visualization
+* Proj01_1 Titanic: Machine Learning & Data Analysis + Visualization
 
 ## Machine Learning
 * ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data  
