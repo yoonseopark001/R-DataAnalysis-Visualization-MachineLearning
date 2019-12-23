@@ -28,7 +28,10 @@
 
 ## Data Visualization
 * DV01 Plot and Style Argument + Multiple Plots & Different Plots in one page + Add lines `plot` `par(mfrow())` `lines`
-* DV02 Plot Argument details in type, lty, pch `plot` `type` `lty` `pch`  
+* DV02 Plot Argument details in type, lty, pch, col `plot` `type` `lty` `pch` `col`
+* DV02_1 pch and ifelse
+* DV03 sunflowerplot `sunflowerplot`  
+* DV04 boxplot `boxplot`  
 
 ## Statistics
 * Stat01 Shapiro-Wilk normality test `shapiro.test`
