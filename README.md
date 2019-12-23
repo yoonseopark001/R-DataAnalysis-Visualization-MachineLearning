@@ -32,6 +32,7 @@
 * DV02_1 pch and ifelse
 * DV03 sunflowerplot `sunflowerplot`  
 * DV04 boxplot `boxplot`  
+* DV05 pie, pie3D `pie` `pie3D`  
 
 ## Statistics
 * Stat01 Shapiro-Wilk normality test `shapiro.test`
