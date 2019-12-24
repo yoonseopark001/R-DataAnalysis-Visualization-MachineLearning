@@ -36,6 +36,7 @@
 * DV06 barplot `barplot` `beside` `horiz`   
 * DV06_1 barplot with VA Death Rate Data `barplot` `matrix` `beside` `horiz`  
 * DV06_2 barplot with Quartly Sales Performance `names` `space` ``cex.names`
+* DV07 histogram with iris Data  
 
 
 ## Statistics
