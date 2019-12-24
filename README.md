@@ -34,7 +34,8 @@
 * DV04 boxplot `boxplot`  
 * DV05 pie, pie3D `pie` `pie3D`  
 * DV06 barplot `barplot` `beside` `horiz`   
-* DV06_1 barplot with VA Death Rate Data `barplot` `matrix` `beside` `horiz`   
+* DV06_1 barplot with VA Death Rate Data `barplot` `matrix` `beside` `horiz`  
+* DV06_2 barplot with Quartly Sales Performance `names` `space` ``cex.names`
 
 
 ## Statistics
