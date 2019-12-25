@@ -1,6 +1,6 @@
 ### This repository covers the major topics in Data Analysis with R.
 
-## Project
+## Projects
 * Project02 the 19th Presidential Election of South Korea: Data Analysis & Data Visualization  
 * Project03 Titanic: Machine Learning & Data Analysis [Kaggle]  
 * Project03_1 Titanic: Machine Learning & Data Analysis + Visualization
