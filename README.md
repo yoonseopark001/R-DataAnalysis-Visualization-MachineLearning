@@ -50,6 +50,8 @@
 * Stat03 t-test: one sample t-test, two sample t-test `t.test`  
 * Stat04 Fisher's exact test `fisher.test`  
 * Stat05 Correlation test `cor` `cor.test`  
+* Stat06 Distribution Functions - Normal Distribution Function, Probability Density Function, Cumulative Distribution Function + Math `rnorm` `dnorm` `pnorm` 
+
 
 ## Programming
 * Prog01 Multiplication Tables `for` `if`  `function` `cat` `paste`  
