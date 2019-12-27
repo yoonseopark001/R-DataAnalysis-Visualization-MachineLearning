@@ -39,7 +39,8 @@
 * DV06_1 barplot with VA Death Rate Data `barplot` `matrix` `beside` `horiz`  
 * DV06_2 barplot with Quartly Sales Performance `names` `space` ``cex.names`
 * DV06_3 barplot with Score Data `unique` `factor` `table` `for` `brewer.pal` `viridis` `par`
-* DV07 histogram with iris Data  
+* DV07 histogram with iris Data `hist`  
+* DV08 plot options `arrow` `mtext` `arrows`  
 [Color Palettes in R](https://rjbioinformatics.com/2016/07/10/creating-color-palettes-in-r/)
 
 
