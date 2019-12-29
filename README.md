@@ -6,7 +6,7 @@
 * Project03 Titanic: Machine Learning & Data Analysis [Kaggle]  
 * Project03_1 Titanic: Machine Learning & Data Analysis + Visualization
 
-## Machine Learning
+## Machine Learning - Supervised and Unsupervised Learning
 * ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data `set.seed` `ctree` `plot` `confusionMatrix`
 * ML02 randomForest with iris data `subset` `predict` `randomForest` `table`  
 * ML02_1 randomForest with Mushroom data (UCI Machine Learning Repository) `for` `nrow` `subset` `randomForest`  
