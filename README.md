@@ -17,7 +17,8 @@
 * ML05 K-Means Clustering with iris data `function` `sapply` `scale` `kmeans`  
 * ML06 KNN (N-Nearest Neighbors) with iris data + EDA `library(class)` `knn` `for`
 * ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data `dim` `plot` `points` `qplot`  
-* ML07 nnet - Multinomial Logistic Regression with iris data `multinom`
+* ML07 nnet - Multinomial Logistic Regression with iris data `multinom`  
+* ML_appendix Save, Load, and Use trained model  `saveRDS` `readRDS`
 
 ## Data Analysis
 * DA01 Frequency Table with Survey data  
