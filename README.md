@@ -5,6 +5,8 @@
 * Project02 the 19th Presidential Election of South Korea: Data Analysis & Data Visualization  
 * Project03 Titanic: Machine Learning & Data Analysis [Kaggle]  
 * Project03_1 Titanic: Machine Learning & Data Analysis + Visualization
+* Project04 MNIST - handwriting `dpylr`  
+* Project05 MNIST [Kaggle]  `dpylr`  
 
 ## Machine Learning - Supervised and Unsupervised Learning
 * ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data `set.seed` `ctree` `plot` `confusionMatrix`
@@ -15,7 +17,8 @@
 * ML05 K-Means Clustering with iris data `function` `sapply` `scale` `kmeans`  
 * ML06 KNN (N-Nearest Neighbors) with iris data + EDA `library(class)` `knn` `for`
 * ML06_1 KNN (N-Nearest Neighbors) with two columns of iris data `dim` `plot` `points` `qplot`  
-* ML07 nnet - Multinomial Logistic Regression with iris data `multinom`
+* ML07 nnet - Multinomial Logistic Regression with iris data `multinom`  
+* ML_appendix Save, Load, and Use trained model  `saveRDS` `readRDS`
 
 ## Data Analysis
 * DA01 Frequency Table with Survey data  
