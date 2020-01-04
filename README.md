@@ -5,6 +5,8 @@
 * Project02 the 19th Presidential Election of South Korea: Data Analysis & Data Visualization  
 * Project03 Titanic: Machine Learning & Data Analysis [Kaggle]  
 * Project03_1 Titanic: Machine Learning & Data Analysis + Visualization
+* Project04 MNIST - handwriting  
+* Project05 MNIST - [Kaggle]  
 
 ## Machine Learning - Supervised and Unsupervised Learning
 * ML01 ctree (Conditional Inference Trees) - Decision Tree with iris data `set.seed` `ctree` `plot` `confusionMatrix`
